@@ -22,10 +22,8 @@ deploy:
 # we've added and will use Travis proj environment variables
 #    access_key_id: $AWS_ACCESS_KEY
 #    secret_access_key: $AWS_SECRET_KE
-  access_key_id: 
-    secure: $AWS_ACCESS_KEY
-  secret_access_key: 
-    secure: $AWS_SECRET_KEY
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
 
 
 
