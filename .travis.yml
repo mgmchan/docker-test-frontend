@@ -9,6 +9,7 @@ before_install:
 script:
   - docker run -e CI=true mgmchan1216/testme npm run test
 
+before_deploy: echo "starting deploy"
 deploy:
   provider: elasticbeanstalk 
   region: "ap-east-1"
