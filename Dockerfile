@@ -1,9 +1,9 @@
 # first create a container that allow 'npm run build'
 # npm run build creates the /build folder and that's
 # final code we need to put into production web server
-FROM node:alpine AS builder
+FROM node:alpine
 WORKDIR '/app'
-COPY package.json .
+COPY package*.json .
 RUN npm install
 COPY . .
 RUN npm run build
@@ -12,4 +12,4 @@ RUN npm run build
 # into the container
 FROM nginx
 EXPOSE 80
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=0 /app/build /usr/share/nginx/html
