@@ -13,8 +13,8 @@ before_deploy: echo "starting deploy"
 deploy:
   provider: elasticbeanstalk 
   region: "ap-east-1"
-  app: "udemy-docker-frontend"
-  env: "UdemyDockerFrontend-env"
+  app: "docker-test-frontend"
+  env: "DockerTestFrontend-env"
   bucket_name: "elasticbeanstalk-ap-east-1-003053758680"
   bucket_path: "docker-test-frontend"
   on:
