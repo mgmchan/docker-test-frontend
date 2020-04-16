@@ -11,10 +11,10 @@ script:
 
 deploy:
   provider: elasticbeanstalk 
-  region: "ap-southeast-1"
-  app: "docker-test-frontend"
-  env: "DockerTestFrontend-env"
-  bucket_name: "elasticbeanstalk-ap-southeast-1-003053758680"
+  region: "ap-east-1"
+  app: "udemy-docker-frontend"
+  env: "UdemyDockerFrontend-env"
+  bucket_name: "elasticbeanstalk-ap-east-1-003053758680"
   bucket_path: "docker-test-frontend"
   on:
     branch: master
