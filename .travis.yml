@@ -10,7 +10,7 @@ script:
   - docker run -e CI=true mgmchan1216/testme npm run test
 
 deploy:
-  provider: elasticbeanstalk
+  provider: elasticbeanstalk 
   region: "ap-southeast-1"
   app: "docker-test-frontend"
   env: "DockerTestFrontend-env"
