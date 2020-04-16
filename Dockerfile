@@ -3,9 +3,9 @@
 # final code we need to put into production web server
 FROM node:alpine
 WORKDIR '/app'
-COPY package*.json .
+COPY package.json ./
 RUN npm install
-COPY . .
+COPY ./ ./
 RUN npm run build
 
 # now create nginx container and copy the /build folder
