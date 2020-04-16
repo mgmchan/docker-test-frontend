@@ -7,4 +7,23 @@ before_install:
   - docker build -t testme -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true testme npm run test -- --coverage
+  - docker run -e CI=true testme npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-southeast-1"
+  app: "docker-test-frontend"
+  env: "DockerTestFrontend-env"
+  bucket_name: "elasticbeanstalk-ap-southeast-1-003053758680"
+  bucket_path: "docker-test-frontend"
+  on:
+    branch: master
+
+# we've added and will use Travis proj environment variables
+#    access_key_id: $AWS_ACCESS_KEY
+#    secret_access_key: $AWS_SECRET_KE
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+
+
+
