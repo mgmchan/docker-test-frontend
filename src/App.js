@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
 					Hi There <br/> 
-					Testing  docker-compose "volumes" 
+					Testing Git-Travis-Elastic Beanstalk CI/CD
         </p>
         <a
           className="App-link"
