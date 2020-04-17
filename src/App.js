@@ -8,8 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-					Hi There <br/> 
+					Hi There 
+          <br/> 
 					Testing Git-Travis-Elastic Beanstalk CI/CD
+          <br/>
           Push from Surface
         </p>
         <a
