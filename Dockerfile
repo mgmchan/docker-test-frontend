@@ -3,7 +3,7 @@
 # final code we need to put into production web server
 FROM node:alpine
 WORKDIR '/app'
-COPY package*.json ./package.json
+COPY package*.json ./
 RUN npm install
 COPY ./ ./
 RUN npm run build
