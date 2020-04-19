@@ -12,7 +12,7 @@ function App() {
 					<br/> 
 					Testing Git-Travis-Elastic Beanstalk CI/CD
 					<br/>
-					If you want to run locally, use docker-compose
+					If you want to run and test locally, use docker-compose
         </p>
         <a
           className="App-link"
