@@ -8,8 +8,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-					Hi There <br/> 
+					Hi there 
+					<br/> 
 					Testing Git-Travis-Elastic Beanstalk CI/CD
+					<br/>
+					If you want to run locally, use docker-compose
         </p>
         <a
           className="App-link"
