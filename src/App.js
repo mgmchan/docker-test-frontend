@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-					Hi there 
+					Hi Michael 
 					<br/> 
 					Testing Git-Travis-Elastic Beanstalk CI/CD
 					<br/>
